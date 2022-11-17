@@ -3,6 +3,8 @@ import { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 
+import PasswordUtil from "../utils/password";
+
 const RegistrationForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -19,7 +21,18 @@ const RegistrationForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    createUserWithEmailAndPassword(auth, email, password)
+    
+    const isPasswordValid = PasswordUtil.validatePassword(password);
+
+    if (!isPasswordValid) {
+      setError('Password must contain at least one lowercase letter, one uppercase letter, one numeric digit, and one special character');
+      setPassword('');
+      return;
+    }
+
+    const hashedPassword = PasswordUtil.hashPassword(password);
+
+    createUserWithEmailAndPassword(auth, email, hashedPassword)
         .then(() => {
           setError('');
         })
@@ -34,14 +47,8 @@ const RegistrationForm = () => {
   return (
     <div className="login-form">
       <form onSubmit={handleSubmit}>
-        <label>
-            Email:
-            <input type="email" value={email} onChange={handleEmailInput} placeholder="Email" />
-        </label>
-        <label>
-            Password:
-            <input type="password" value={password} onChange={handlePasswordInput} placeholder="Password" />
-        </label>
+      <input type="email" value={email} onChange={handleEmailInput} placeholder="Email" />
+      <input type="password" value={password} onChange={handlePasswordInput} placeholder="Password" />
         <button>Signup</button>
       </form>
       {error ? <div>{`${error}`}</div> : null}
