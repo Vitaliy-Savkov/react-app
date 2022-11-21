@@ -41,7 +41,7 @@ const Button = styled.button`
     padding: 15px 25px;
     border-radius: 160px;
     cursor: pointer;
-    width: 238px;
+    width: 258px;
 `
 
 const BookCall = () => {

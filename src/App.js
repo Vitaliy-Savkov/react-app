@@ -9,6 +9,7 @@ import Interests from "./components/Interests";
 import Call from "./components/Call";
 import Ebook from "./components/Ebook";
 import BookCall from "./components/BookCall";
+import Signup from "./components/Signup";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Call />
       <Ebook />
       <BookCall />
+      <Signup />
     </div>
   );
 }
