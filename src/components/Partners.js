@@ -59,7 +59,7 @@ const ImgWrapper = styled.div`
 const PartnersImagesContainer = styled.div`
     display: flex;
     justify-content: space-around;
-    margin: 0 272px 0 272px;
+    margin: 0 272px 125px 272px;
 `
 
 const Partners = () => {
