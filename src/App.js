@@ -5,6 +5,7 @@ import Workplace from "./components/Workplace";
 import Partners from "./components/Partners";
 import Quality from "./components/Quality";
 import Employees from "./components/Employees";
+import Interests from "./components/Interests";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Partners />
       <Quality />
       <Employees />
+      <Interests />
     </div>
   );
 }
