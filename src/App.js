@@ -8,6 +8,7 @@ import Employees from "./components/Employees";
 import Interests from "./components/Interests";
 import Call from "./components/Call";
 import Ebook from "./components/Ebook";
+import BookCall from "./components/BookCall";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Interests />
       <Call />
       <Ebook />
+      <BookCall />
     </div>
   );
 }
