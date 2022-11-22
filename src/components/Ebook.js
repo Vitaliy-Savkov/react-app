@@ -1,4 +1,5 @@
-import bookImg from "../assets/book.svg";
+import bookImg from "../assets/ebook/book.svg";
+
 import styled from "@emotion/styled";
 
 const Container = styled.div`

@@ -1,7 +1,8 @@
-import documentsImg from "../assets/documents.svg";
-import educationImg from "../assets/education.svg";
-import faceImg from "../assets/face.svg";
-import protectionImg from "../assets/protection.svg";
+import documentsImg from "../assets/quality/documents.svg";
+import educationImg from "../assets/quality/education.svg";
+import faceImg from "../assets/quality/face.svg";
+import protectionImg from "../assets/quality/protection.svg";
+
 import styled from "@emotion/styled";
 
 const Container = styled.div`

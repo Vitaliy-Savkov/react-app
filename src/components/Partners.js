@@ -1,10 +1,10 @@
-import bubbleFemaleImg from "../assets/bubble-female.svg";
-import bubbleMaleImg from "../assets/bubble-male.svg";
-import aircallImg from "../assets/aircall.svg";
-import googleImg from "../assets/google.svg";
-import gustoImg from "../assets/gusto.svg";
-import notionImg from "../assets/notion.svg";
-import stripeImg from "../assets/stripe.svg";
+import bubbleFemaleImg from "../assets/partners/bubble-female.svg";
+import bubbleMaleImg from "../assets/partners/bubble-male.svg";
+import aircallImg from "../assets/partners/aircall.svg";
+import googleImg from "../assets/partners/google.svg";
+import gustoImg from "../assets/partners/gusto.svg";
+import notionImg from "../assets/partners/notion.svg";
+import stripeImg from "../assets/partners/stripe.svg";
 
 import styled from "@emotion/styled";
 

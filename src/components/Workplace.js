@@ -1,4 +1,5 @@
-import workplaceImg from "../assets/workplace.svg";
+import workplaceImg from "../assets/workplace/workplace.svg";
+
 import styled from "@emotion/styled";
 
 const Container = styled.header`
