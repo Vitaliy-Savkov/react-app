@@ -4,15 +4,15 @@ import rightSideLeafsImg from "../assets/book-call/rightside-leafs.svg";
 import styled from "@emotion/styled";
 
 const Container = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #163A24;
     color: #FBFAF7;
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 600;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 `
 
 const ContentContainer = styled.div`
@@ -21,10 +21,10 @@ const ContentContainer = styled.div`
     align-items: center;
 
     & > h2 {
+        margin: 0;
         font-family: 'Recoleta';
         font-size: 48px;
         line-height: 54px;
-        margin: 0;
     }
 
     & > p {
@@ -35,11 +35,11 @@ const ContentContainer = styled.div`
 `
 
 const Button = styled.button`
+    padding: 15px 25px;
     background: #FAB5A0;
     color: #163A24;
     font-size: 16px;
     line-height: 22px;
-    padding: 15px 25px;
     border-radius: 160px;
     cursor: pointer;
     width: 258px;
