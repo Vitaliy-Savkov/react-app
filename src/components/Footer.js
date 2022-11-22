@@ -1,15 +1,15 @@
 import footerLogoImg from "../assets/footer/footer-logo.svg";
 import fbImg from "../assets/footer/fb.svg";
-import twitterrImg from "../assets/footer/twitter.svg";
+import twitterImg from "../assets/footer/twitter.svg";
 import linkedinImg from "../assets/footer/linkedin.svg";
 import instagramImg from "../assets/footer/instagram.svg";
 import styled from "@emotion/styled";
 
 const Container = styled.footer`
-    background: #E5E5E5;
-    color: #163A24;
     display: flex;
     flex-direction: column;
+    background: #E5E5E5;
+    color: #163A24;
 `
 
 const LogoContainer = styled.div`
@@ -37,25 +37,25 @@ const SocialMediaContainer = styled.div`
 `
 
 const CopyrightContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 130px;
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 130px;
 `
 
 const LinksContainer = styled.div`
-    color: #198C36;
     display: flex;
+    color: #198C36;
     
     & > a {
+        margin-left: 14px;
         color: #198C36;
         text-decoration: none;
-        margin-left: 14px;
     }
 `
 
@@ -67,7 +67,7 @@ const Footer = () => {
                 <h4>A people company.</h4>
                 <SocialMediaContainer>
                     <a href="https://www.facebook.com/" target={`_blank`}><img src={fbImg} /></a>
-                    <a href="https://twitter.com/i/flow/login" target={`_blank`}><img src={twitterrImg} /></a>
+                    <a href="https://twitter.com/i/flow/login" target={`_blank`}><img src={twitterImg} /></a>
                     <a href="https://www.linkedin.com/" target={`_blank`}><img src={linkedinImg} /></a>
                     <a href="https://www.instagram.com/" target={`_blank`}><img src={instagramImg} /></a>
                 </SocialMediaContainer>
