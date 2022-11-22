@@ -1,15 +1,12 @@
 import logo from "../assets/header/logo.svg";
+
 import styled from "@emotion/styled";
 
-const Button = styled.button`
-    background-color: #198C36;
-    color: #FBFAF7;
-    padding: 15px 25px;
-    border-radius: 160px;
-    cursor: pointer;
-`
-
 const Container = styled.header`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 130px;
     background-color: #163A24;
     color: #FBFAF7;
     font-family: 'Noto Sans';
@@ -17,44 +14,38 @@ const Container = styled.header`
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 `
 
-const Logo = styled.div`
-    margin: 20px 130px 20px;
-
-    & > img {
-        width: 153px;
-        height: 58;
-    }
+const Button = styled.button`
+    padding: 15px 25px;
+    border-radius: 160px;
+    cursor: pointer;
+    background-color: #198C36;
+    color: #FBFAF7;
 `
 
-const SideBar = styled.div`
+const ContentContainer = styled.div`
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: 25px 140px 21px 0;
+    align-items: center;
 
     & > a {
-        color: #FBFAF7;
+        margin-right: 24px;
         text-decoration: none; 
-        padding-right: 24px; 
+        color: #FBFAF7; 
+        
     }
 `
 
 const Header = () => {
     return (
     <Container>
-        <Logo>
-            <img src={logo} alt="Clerksy"/>
-        </Logo>
-        <SideBar>
+        <img src={logo} alt="Clerksy"/>
+        <ContentContainer>
             <a href="#">Log In</a>
             <a href="tel:844-322-6440">844-322-6440</a>
             <Button>Get Started</Button>
-        </SideBar>
+        </ContentContainer>
     </Container>
     );
 }
