@@ -2,41 +2,32 @@ import workplaceImg from "../assets/workplace/workplace.svg";
 
 import styled from "@emotion/styled";
 
-const Container = styled.header`
-    background-color: #163A24;
+const Container = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
+    background-color: #163A24;
+    padding: 0 40px 0 130px;
 `
 
-const WorkplaceImage = styled.div`
-    margin-right: 80px;
-
-    & > img {
-        width: 738px;
-        height: 580;
-    }
-`
-
-const SideBar = styled.div`
+const ContentContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 120px 0 0 130px;
+    align-items: center;
+    text-align: start;
+    font-style: normal;
     color: #FBFAF7; 
 
-    & > p {
+    & > h2 {
+        margin: 120px 200px 18px 0;
         font-family: 'Recoleta';
-        font-style: normal;
         font-weight: 600;
         font-size: 48px;
         line-height: 65px;
-        text-align: start;
-        margin: 0 0 18px 0;
-        width: 391px;
     }
 
-    & > p + p {
+    & > p {
+        margin-right: 200px;
         font-family: 'Noto Sans';
-        font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 27px;
@@ -46,17 +37,11 @@ const SideBar = styled.div`
 const Workplace = () => {
     return (
     <Container>
-        <SideBar>
-            <p>Running the show has never been so easy.</p>
-            <p>
-                Ready to put the human back in HR?
-                Clerksy helps you set the stage with an inclusive
-                and compliant workplace.
-            </p>
-        </SideBar>
-        <WorkplaceImage>
-            <img src={workplaceImg} />
-        </WorkplaceImage>
+        <ContentContainer>
+            <h2>Running the show has never been so easy.</h2>
+            <p>Ready to put the human back in HR?Clerksy helps you set the stage with an inclusive and compliant<br/> workplace.</p>
+        </ContentContainer>
+        <img src={workplaceImg} />
     </Container>
     );
 }

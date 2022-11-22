@@ -6,6 +6,8 @@ import protectionImg from "../assets/quality/protection.svg";
 import styled from "@emotion/styled";
 
 const Container = styled.div`
+    display: flex;
+    flex-direction: column;
     background-color: #163A24;
     color: #FBFAF7;
     font-family: 'Noto Sans';
@@ -13,12 +15,9 @@ const Container = styled.div`
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-    display: flex;
-    flex-direction: column;
 
     & > h2 {
         font-family: 'Recoleta';
-        font-style: normal;
         font-weight: 600;
         font-size: 48px;
         line-height: 54px;
@@ -28,7 +27,7 @@ const Container = styled.div`
 `
 
 const ImagesContainer = styled.div`
-    margin: 0 219px 140px 230px;
+    margin: 0 180px 140px 180px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,12 +37,11 @@ const ImagesContainer = styled.div`
 const ImgContainer = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    justify-content: center;
+    align-items: center;
 
     & > p {
-        width: 198px;
-        margin-left: -55px
+        margin-top: 28px;
+        width: 200px;
     }
 `
 
@@ -69,7 +67,6 @@ const Quality = () => {
                 <p>Create a Healthy Work Environment</p>
             </ImgContainer>
         </ImagesContainer>
-        
     </Container>
     );
 }
