@@ -5,16 +5,15 @@ import priceImg from "../assets/call/price.svg";
 import styled from "@emotion/styled";
 
 const Container = styled.div`
-    background-color: #F2EFE6;
-    color: #163A24;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #F2EFE6;
+    font-style: normal;
+    color: #163A24;
     
-
     & > h2 {
         font-family: 'Recoleta';
-        font-style: normal;
         font-weight: 600;
         font-size: 47px;
         line-height: 54px;
@@ -23,7 +22,6 @@ const Container = styled.div`
 
     & > p {
         font-family: 'Noto Sans';
-        font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 27px;
@@ -49,30 +47,28 @@ const Description = styled.div`
     flex-direction: column;
     justify-content: center;
 
-
     & > p {
-        width: 250px;
         margin: 0 0 13px 0;
+        width: 250px;
     }
 
     & > h3 {
+        margin: 0;
         font-family: 'Recoleta';
-        font-style: normal;
         font-weight: 600;
         font-size: 28px;
         line-height: 32px;
-        margin: 0;
     }
 `
 
 const Button = styled.button`
+    margin-bottom: 222px;
+    width: 244px;
     background-color: #198C36;
     color: #FBFAF7;
     padding: 15px 25px;
     border-radius: 160px;
     cursor: pointer;
-    width: 244px;
-    margin-bottom: 222px;
 `
 
 const ButtonContainer = styled.div`
@@ -96,7 +92,7 @@ const Call = () => {
                 <h3>24 hours</h3>
             </Description>
             <img src={rightArrow2Img} />
-            <img src={priceImg} width="285px" />
+            <img src={priceImg} />
         </DescriptionContainer>
         <ButtonContainer>
             <Button>Book Free Discovery Call</Button>
