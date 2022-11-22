@@ -2,13 +2,13 @@ import { useState } from "react";
 import styled from "@emotion/styled";
 
 const Container = styled.div`
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 0 73px 0;
     color: #163A24;
     font-family: 'Noto Sans';
     font-weight: 400;
     font-style: normal;
-    display: flex;
-    justify-content: space-around;
-    margin: 60px 0 73px 0;
 `
 
 const FormContainer = styled.div`
@@ -17,14 +17,14 @@ const FormContainer = styled.div`
     }    
 
     & > form input {
-        background: #FFFFFF;
-        font-size: 18px;
-        border: 1px solid #F2EFE6;
-        border-radius: 255px;
         display: inline-block;
         padding-right: 50px;
         width: 553px;
         height: 54px;
+        background: #FFFFFF;
+        font-size: 18px;
+        border: 1px solid #F2EFE6;
+        border-radius: 255px;
     }
 
     & > p {
@@ -43,11 +43,11 @@ const ContentContainer = styled.div`
     flex-direction: column;
 
     & > h2 {
+        margin: 0 0 10px 0;
         font-family: 'Recoleta';
         font-weight: 600;
         font-size: 48px;
         line-height: 54px;
-        margin: 0 0 10px 0;
     }
 
     & > p {
@@ -57,13 +57,13 @@ const ContentContainer = styled.div`
 `
 
 const Button = styled.button`
+    padding: 15px 25px;
+    margin-left: -70px;
+    width: 111px;
     background-color: #198C36;
     color: #FBFAF7;
     border-radius: 160px;
     cursor: pointer;
-    width: 111px;
-    padding: 15px 25px;
-    margin-left: -70px;
 `
 
 const Signup = () => {
