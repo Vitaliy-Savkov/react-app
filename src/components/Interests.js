@@ -6,31 +6,36 @@ import starImg from "../assets/interests/star.svg";
 import styled from "@emotion/styled";
 
 const Container = styled.div`
-    background-color: #E5E5E5;
-    color: #163A24;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #E5E5E5;
+    font-style: normal;
+    color: #163A24;
     text-align: start;
 
-    & > h2 {
+    h2 {
+        margin-bottom: 26px;
         font-family: 'Recoleta';
-        font-style: normal;
         font-weight: 600;
         font-size: 48px;
         line-height: 54px;
-        text-align: center;
-        margin-bottom: 26px;
     }
 
-    & > p {
+    p {
+        margin: 0;
         font-family: 'Noto Sans';
-        font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 27px;
+    }
+
+    & > h2 {
         text-align: center;
-        margin: 0;
+    }
+
+    & > p {
+        text-align: center;
     }
 `
 
@@ -47,23 +52,13 @@ const DescriptionContainer = styled.div`
     margin-right: 115px;
 
     & > h2 {
-        font-family: 'Recoleta';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 54px;
-        width: 338px;
         margin-bottom: 27px;
+        width: 338px;
     }
 
     & > p {
-        font-family: 'Noto Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 27px;
-        width: 379px;
         margin: 0;
+        width: 379px;
     }
 `
 
@@ -84,14 +79,13 @@ const Interest = styled.div`
     box-shadow: 5px 5px 20px #E9E4D5;
     border-radius: 15px;
 
-
     & > h3 {
+        margin: 20px 0 23px 0;
         font-family: 'Recoleta';
         font-style: normal;
         font-weight: 600;
         font-size: 28px;
         line-height: 32px;
-        margin: 20px 0 23px 0;
     }
 
     & > ul {
@@ -100,12 +94,12 @@ const Interest = styled.div`
     }
 
     & > ul li {
+        margin-bottom: 15px;
         font-family: 'Noto Sans';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
-        margin-bottom: 15px;
     }
 `
 
