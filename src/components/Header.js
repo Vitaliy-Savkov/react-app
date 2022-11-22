@@ -1,4 +1,4 @@
-import logo from "../assets/logo.svg";
+import logo from "../assets/header/logo.svg";
 import styled from "@emotion/styled";
 
 const Button = styled.button`

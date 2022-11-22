@@ -1,5 +1,5 @@
-import leftSideLeafsImg from "../assets/leftside-leafs.svg";
-import rightSideLeafsImg from "../assets/rightside-leafs.svg";
+import leftSideLeafsImg from "../assets/book-call/leftside-leafs.svg";
+import rightSideLeafsImg from "../assets/book-call/rightside-leafs.svg";
 import styled from "@emotion/styled";
 
 const Container = styled.div`

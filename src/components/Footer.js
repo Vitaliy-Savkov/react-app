@@ -1,8 +1,8 @@
-import footerLogoImg from "../assets/footer-logo.svg";
-import fbImg from "../assets/fb.svg";
-import twitterrImg from "../assets/twitter.svg";
-import linkedinImg from "../assets/linkedin.svg";
-import instagramImg from "../assets/instagram.svg";
+import footerLogoImg from "../assets/footer/footer-logo.svg";
+import fbImg from "../assets/footer/fb.svg";
+import twitterrImg from "../assets/footer/twitter.svg";
+import linkedinImg from "../assets/footer/linkedin.svg";
+import instagramImg from "../assets/footer/instagram.svg";
 import styled from "@emotion/styled";
 
 const Container = styled.footer`

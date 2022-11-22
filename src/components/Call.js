@@ -1,6 +1,6 @@
-import rightArrow1Img from "../assets/right-arrow1.svg";
-import rightArrow2Img from "../assets/right-arrow2.svg";
-import priceImg from "../assets/price.svg";
+import rightArrow1Img from "../assets/call/right-arrow1.svg";
+import rightArrow2Img from "../assets/call/right-arrow2.svg";
+import priceImg from "../assets/call/price.svg";
 
 import styled from "@emotion/styled";
 

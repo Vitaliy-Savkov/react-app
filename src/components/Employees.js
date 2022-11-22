@@ -1,4 +1,5 @@
-import emloyeesImg from "../assets/employees.svg";
+import emloyeesImg from "../assets/employees/employees.svg";
+
 import styled from "@emotion/styled";
 
 

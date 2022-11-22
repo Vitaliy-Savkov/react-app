@@ -1,7 +1,7 @@
-import charactersImg from "../assets/characters.svg";
-import guardImg from "../assets/guard.svg";
-import magnifierImg from "../assets/magnifier.svg";
-import starImg from "../assets/star.svg";
+import charactersImg from "../assets/interests/characters.svg";
+import guardImg from "../assets/interests/guard.svg";
+import magnifierImg from "../assets/interests/magnifier.svg";
+import starImg from "../assets/interests/star.svg";
 
 import styled from "@emotion/styled";
 
