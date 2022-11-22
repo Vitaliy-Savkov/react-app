@@ -9,81 +9,81 @@ import stripeImg from "../assets/partners/stripe.svg";
 import styled from "@emotion/styled";
 
 const Container = styled.div`
-    background-color: #E5E5E5;
-    font-family: 'Recoleta';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 54px;
-    color: #163A24;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    & > p {
-        margin: 115px 0 66px 0;
+    padding: 120px 110px;
+    background-color: #E5E5E5;
+    font-style: normal;
+    color: #163A24;
+    
+    & > h2 {
+        margin: 115px 0 70px 0;
+        font-family: 'Recoleta';
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 54px;
     }
 `
 
-const FemaleImgContainer = styled.div`
-    margin: 130px 99px 0 0;
-`
-
-const MaleImgContainer = styled.div`
-    margin: 0 0 0 119px;
-`
 const DescriptionContainer = styled.div`
-    margin-top: ${props => props.male ? "80px" : "268px"};
-    width: 380px;
+    display: flex;
+    flex-direction: column;
     text-align: start;
+    padding-right: 118px;
 
-    & > p {
-        margin-bottom: 27px;
+    & > h2 {
+        font-family: 'Recoleta';
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 54px;
+        margin: 0 0 27px 0;
     }
 
-    & > p + p {
+    & > p {
         font-family: 'Noto Sans';
-        font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 27px;
+        margin: 0;
     }
+    
 `
-const ImgWrapper = styled.div`
+const ImageContainer = styled.div`
     display: flex;
-    justify-content: ${props => props.end ? "flex-end" : "flex-start"};
-    flex-direction: ${props => props.row ? "row" : "row-reverse"};
-    margin-left: 229px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 0 98px;
+
+    & > img {
+        margin-right: 100px;
+    }
 `
 
 const PartnersImagesContainer = styled.div`
     display: flex;
-    justify-content: space-around;
-    margin: 0 272px 125px 272px;
+    justify-content: space-between;
+    margin: 0 158px;
 `
 
 const Partners = () => {
     return (
     <Container>
-        <ImgWrapper row>
-            <FemaleImgContainer>
-                <img src={bubbleFemaleImg} />
-            </FemaleImgContainer>
+        <ImageContainer>
+            <img src={bubbleFemaleImg} />
             <DescriptionContainer>
-                <p>Put the human back in HR</p>
+                <h2>Put the human back in HR</h2>
                 <p>Your employees are the real stars. Show the love and help them perform!</p>
             </DescriptionContainer>
-        </ImgWrapper>
-        <ImgWrapper end>
-            <MaleImgContainer>
-                <img src={bubbleMaleImg} />
-            </MaleImgContainer>
-            <DescriptionContainer male>
-                <p>You don’t have to play all the parts.</p>
+        </ImageContainer>
+        <ImageContainer>
+            <DescriptionContainer>
+                <h2>You don’t have to play all the parts.</h2>
                 <p>Sales, accounting, HR— Oh My! You can’t do it all - let Clerksy help.</p>
             </DescriptionContainer>
-        </ImgWrapper>
-        <p>We partner with the best</p>
+            <img src={bubbleMaleImg} />
+        </ImageContainer>
+        <h2>We partner with the best</h2>
         <PartnersImagesContainer>
             <img src={stripeImg} />
             <img src={googleImg} />
