@@ -14,18 +14,20 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Workplace />
-      <Partners />
-      <Quality />
-      <Employees />
-      <Interests />
-      <Call />
-      <Ebook />
-      <BookCall />
-      <Signup />
-      <Footer />
+    <div className="App-container">
+      <div className="App">
+        <Header />
+        <Workplace />
+        <Partners />
+        <Quality />
+        <Employees />
+        <Interests />
+        <Call />
+        <Ebook />
+        <BookCall />
+        <Signup />
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -64,7 +64,7 @@ const DescriptionContainer = styled.div`
 
 const InterestsContainer = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     margin: 18px 130px 120px 130px;
 
@@ -73,14 +73,15 @@ const InterestsContainer = styled.div`
 const Interest = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 50px 0 0 40px;
+    padding: 50px 0 0 0px;
+    
     width: 353px;
     background-color: #FBFAF7;
     box-shadow: 5px 5px 20px #E9E4D5;
     border-radius: 15px;
 
     & > h3 {
-        margin: 20px 0 23px 0;
+        margin: 20px 0 23px 40px;
         font-family: 'Recoleta';
         font-style: normal;
         font-weight: 600;
@@ -88,13 +89,17 @@ const Interest = styled.div`
         line-height: 32px;
     }
 
+    & > img {
+        margin-left: 40px;
+    }
+
     & > ul {
-        margin: 0 0 66px 15px;
-        padding: 0;
+        margin: 0 0 66px 20px;      
     }
 
     & > ul li {
         margin-bottom: 15px;
+        width: 353px;
         font-family: 'Noto Sans';
         font-style: normal;
         font-weight: 400;
